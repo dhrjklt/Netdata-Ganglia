@@ -13,11 +13,11 @@ OS: CentOS 6.8
 
 For Ganglia installation digitalocean tutorial is best
 
-  https://www.digitalocean.com/community/tutorials/introduction-to-ganglia-on-ubuntu-14-04
+* [Digital_Ocean](https://www.digitalocean.com/community/tutorials/introduction-to-ganglia-on-ubuntu-14-04)
 
 For Netdata installation digitalocean tutorial is awesome
 
-  https://www.digitalocean.com/community/tutorials/how-to-set-up-real-time-performance-monitoring-with-netdata-on-ubuntu-16-04
+* [Digital_Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-real-time-performance-monitoring-with-netdata-on-ubuntu-16-04)
 
 Nginx reverse proxy to connect to backend ganglia and netdata
 
@@ -87,11 +87,10 @@ Enable nginx part in ``/etc/fail2ban/jain.conf``
   enabled  = true
   filter   = nginx-http-auth
   port     = http,https
-  logpath  = /var/log/nginx/error.log
- ``
- For more info digital ocean 
+  logpath  = /var/log/nginx/error.log``
+  
  
-  https://www.digitalocean.com/community/tutorials/how-to-protect-an-nginx-server-with-fail2ban-on-ubuntu-14-04
+* [Digital_Ocean](https://www.digitalocean.com/community/tutorials/how-to-protect-an-nginx-server-with-fail2ban-on-ubuntu-14-04)
 
 SSL Configuration 
 
