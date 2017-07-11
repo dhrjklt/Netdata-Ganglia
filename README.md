@@ -5,10 +5,13 @@ System performace visulization.
 
 ## Getting Started
 
-![netdata](Images/netdata.jpg) 
-
 Gnaglia and netdata are well used opensource software for  system performance visulization tool in linux based batch systems. 
 
+![netdata](Images/netdata.jpg) 
+
+Ganglia is a scalable distributed monitoring system. It scales well with very large numbers of servers and is useful for viewing performance metrics in near real-time.
+
+Netdata provides accurate performance monitoring through extensible web dashboards that visualize the processes and services on your Linux systems. It monitors metrics about CPU, memory, disks, networks, processes, and more.
 
 ### Prerequisites
 
