@@ -1,25 +1,31 @@
 
-Web Monitoring
+# Web Monitoring
+
 
 OS: CentOS 6.8
 
-Introduction:
-
-Monitor and maintaing webserver and cluster is painfull. Ganglia and Netdata tools are preety easy to implement and maintain.
-Nginx webservice is being used to serve both ganglia and netdata applications.
+## Getting Started
 
 
-Installation:
 
-1. For Ganglia installation digitalocean tutorial is best
 
-https://www.digitalocean.com/community/tutorials/introduction-to-ganglia-on-ubuntu-14-04
+### Prerequisites
 
-2. For Netdata installation digitalocean tutorial is awesome
+For Ganglia installation digitalocean tutorial is best
 
- https://www.digitalocean.com/community/tutorials/how-to-set-up-real-time-performance-monitoring-with-netdata-on-ubuntu-16-04
+  https://www.digitalocean.com/community/tutorials/introduction-to-ganglia-on-ubuntu-14-04
 
-For serving netdata backend and ganglai(apache) we will be using Nginx as our webserver.
+For Netdata installation digitalocean tutorial is awesome
+
+  https://www.digitalocean.com/community/tutorials/how-to-set-up-real-time-performance-monitoring-with-netdata-on-ubuntu-16-04
+
+Nginx reverse proxy to connect to backend ganglia and netdata
+
+### Installing
+
+Run ```./install.sh ``` script 
+
+
 
 For Ganglia:
 
