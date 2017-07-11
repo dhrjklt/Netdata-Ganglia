@@ -57,12 +57,10 @@ our work to encrypt the web, protect its users and defend digital rights.
 -------------------------------------------------------------------------------
 (Y)es/(N)o: <depends on you >
 ```
-```
-Please enter in your domain name(s) (comma and/or space separated)  (Enter 'c'
-to cancel): <hostname.domain>
-```
+``Please enter in your domain name(s) (comma and/or space separated)  (Enter 'c'
+to cancel): <hostname.domain>``
 
-#### Security setup 
+### Security setup 
 
 SSL Configuration 
 
