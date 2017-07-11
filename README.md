@@ -1,15 +1,18 @@
 
 # Web Monitoring
 
-
-OS: CentOS 6.8
+System performace visulization. 
 
 ## Getting Started
 
+![netdata](Images/netdata.jpg) 
 
+Gnaglia and netdata are well used opensource software for  system performance visulization tool in linux based batch systems. 
 
 
 ### Prerequisites
+
+OS: CentOS 6.8
 
 For Ganglia installation digitalocean tutorial is best
 
@@ -85,15 +88,13 @@ To protect from bruteforce configure fail2ban
 
 Enable nginx part in ``/etc/fail2ban/jain.conf``
 
-``
--------------------------------------------
+```
 [nginx-http-auth]
 enabled  = true
 filter   = nginx-http-auth
 port     = http,https
 logpath  = /var/log/nginx/error.log
-------------------------------------------
-``
+```
   
  
 * [Digital_Ocean](https://www.digitalocean.com/community/tutorials/how-to-protect-an-nginx-server-with-fail2ban-on-ubuntu-14-04)
@@ -101,13 +102,18 @@ logpath  = /var/log/nginx/error.log
 
 ### Testing 
 
-For Ganglia:
+``service nginx httpd start``
 
-   Check: curl http://127.0.0.1:8000
+For Ganglia
 
-For Netdata:
+   ``curl http://127.0.0.1:8000``
 
-   Check: curl http://127.0.0.1:19999
+For Netdata
 
+   ``curl http://127.0.0.1:19999``
+   
+Certificate check  
+
+  ``openssl s_client -connect <hostname.domain>:443`` 
 
 
