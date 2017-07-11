@@ -61,6 +61,7 @@ our work to encrypt the web, protect its users and defend digital rights.
 Please enter in your domain name(s) (comma and/or space separated)  (Enter 'c'
 to cancel): <hostname.domain>
 ```
+
 #### Security setup 
 
 SSL Configuration 
