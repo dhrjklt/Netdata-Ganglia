@@ -75,31 +75,28 @@ Generate Strong Diffie-Hellman Group,to generate a 2048-bit group, use this comm
 
 ``sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048``
 
+
 Password authentication with Nginx
 
 ``htpasswd /etc/nginx/.htpasswd <user_name>`` 
+
 
 To protect from bruteforce configure fail2ban 
 
 Enable nginx part in ``/etc/fail2ban/jain.conf``
 
-``[nginx-http-auth]
-  enabled  = true
-  filter   = nginx-http-auth
-  port     = http,https
-  logpath  = /var/log/nginx/error.log``
+``
+-------------------------------------------
+[nginx-http-auth]
+enabled  = true
+filter   = nginx-http-auth
+port     = http,https
+logpath  = /var/log/nginx/error.log
+------------------------------------------
+``
   
  
 * [Digital_Ocean](https://www.digitalocean.com/community/tutorials/how-to-protect-an-nginx-server-with-fail2ban-on-ubuntu-14-04)
-
-SSL Configuration 
-
-Copy the ``nginx.conf`` to ``/etc/nginx/config.d/``
-
-Replace 
-
-ssl_certificate /etc/letsencrypt/live/``<host.domain>``/fullchain.pem;  
-ssl_certificate_key /etc/letsencrypt/live/`<host.domain>`/privkey.pem
 
 
 ### Testing 
