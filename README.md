@@ -48,7 +48,7 @@ https://acme-v01.api.letsencrypt.org/directory
 -------------------------------------------------------------------------------
 (A)gree/(C)ancel: A
 ```
-````
+```
 -------------------------------------------------------------------------------
 Would you be willing to share your email address with the Electronic Frontier
 Foundation, a founding partner of the Let's Encrypt project and the non-profit
